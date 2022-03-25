@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="629.0" prefWidth="657.0" style="-fx-background-color: #100e1a;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="667.0" style="-fx-background-color: #17152b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.acceuilController">
    <children>
       <ImageView fitHeight="125.0" fitWidth="199.0" layoutX="450.0" layoutY="6.0">
          <image>
@@ -19,9 +19,10 @@
             <Font name="Arial Bold Italic" size="34.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="51.0" layoutY="164.0" prefHeight="164.0" prefWidth="200.0" style="-fx-border-color: #d3b52d; -fx-border-width: 3px; -fx-border-style: dashed; -fx-border-radius: 5px;" />
-      <AnchorPane layoutX="408.0" layoutY="175.0" prefHeight="164.0" prefWidth="200.0" style="-fx-border-color: #d3b52d; -fx-border-width: 3px; -fx-border-style: dashed; -fx-border-radius: 5px;" />
-      <AnchorPane layoutX="60.0" layoutY="409.0" prefHeight="164.0" prefWidth="200.0" style="-fx-border-color: #d3b52d; -fx-border-width: 3px; -fx-border-style: dashed; -fx-border-radius: 5px;" />
-      <AnchorPane accessibleRole="BUTTON" layoutX="408.0" layoutY="409.0" prefHeight="164.0" prefWidth="200.0" style="-fx-border-color: #d3b52d; -fx-border-width: 3px; -fx-border-style: dashed; -fx-border-radius: 5px;" />
-   </children>
+      <Button layoutX="29.0" layoutY="185.0" mnemonicParsing="false" onAction="#ouvrircomm" prefHeight="101.0" prefWidth="259.0" style="-fx-border-color: #d3b52d; -fx-border-width: 3px; -fx-border-radius: 5px; -fx-border-style: dashed; -fx-background-color: #100e1a;" text="COMMANDE" textFill="#d3b52d" />
+      <Button layoutX="29.0" layoutY="426.0" mnemonicParsing="false" onAction="#ouvrirstock" prefHeight="101.0" prefWidth="259.0" style="-fx-border-color: #d3b52d; -fx-border-width: 3px; -fx-border-radius: 5px; -fx-border-style: dashed; -fx-background-color: #100e1a;" text="STOCK" textFill="#d3b52d" />
+      <Button layoutX="349.0" layoutY="426.0" mnemonicParsing="false" onAction="#ouvrirEdonnee" prefHeight="101.0" prefWidth="259.0" style="-fx-border-color: #d3b52d; -fx-border-width: 3px; -fx-border-radius: 5px; -fx-border-style: dashed; -fx-background-color: #100e1a;" text="ENREGISTREMENT DE DONNEES" textFill="#d3b52d" />
+      <Button layoutX="349.0" layoutY="185.0" mnemonicParsing="false" onAction="#ouvrirbilan" prefHeight="101.0" prefWidth="259.0" style="-fx-border-color: #d3b52d; -fx-border-width: 3px; -fx-border-radius: 5px; -fx-border-style: dashed; -fx-background-color: #100e1a;" text="BILAN" textFill="#d3b52d" />
+    </children>
 </AnchorPane>
+   

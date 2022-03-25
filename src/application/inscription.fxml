@@ -9,17 +9,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="667.0" style="-fx-background-color: #17152b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="667.0" style="-fx-background-color: #17152b;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.inscriptionController">
    <children>
-      <Label layoutX="27.0" layoutY="16.0" prefHeight="42.0" prefWidth="491.0" text="CREER UTILISATEUR" textFill="#d3b52d">
+      <Label layoutX="27.0" layoutY="16.0" prefHeight="42.0" prefWidth="491.0" text="PAGE INSCRIPTION" textFill="#d3b52d">
          <font>
             <Font name="Arial Bold Italic" size="34.0" />
-         </font>
-      </Label>
-      <Label layoutX="237.0" layoutY="165.0" text="NOM:" textFill="#d3b52d">
-         <font>
-            <Font name="Arial Bold Italic" size="20.0" />
          </font>
       </Label>
       <Label layoutX="171.0" layoutY="233.0" text="IDENTIFIANT:" textFill="#d3b52d">
@@ -28,22 +22,15 @@
          </font>
       </Label>
       <Label layoutX="152.0" layoutY="297.0" style="-fx-font-family: arial; -fx-font-size: 20; -fx-font-weight: bold italic;" text="MOT DE PASSE" textFill="#d3b52d" />
-      <Label layoutX="152.0" layoutY="368.0" style="-fx-font-family: arial; -fx-font-size: 20px; -fx-font-weight: bold italic;" text="CONFIRMATION:" textFill="#d3b52d">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Button layoutX="461.0" layoutY="447.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="151.0" style="-fx-border-color: #d3b52d; -fx-background-color: #17152b; -fx-border-width: 3px; -fx-font-family: arial; -fx-font-size: 15; -fx-font-weight: bold italic;" text="CONFIRMATION" textFill="#d3b52d">
+      <Button layoutX="455.0" layoutY="414.0" mnemonicParsing="false" onAction="#enregistreradmin" prefHeight="38.0" prefWidth="151.0" style="-fx-border-color: #d3b52d; -fx-background-color: #17152b; -fx-border-width: 3px; -fx-font-family: arial; -fx-font-size: 15; -fx-font-weight: bold italic;" text="CONNECTION" textFill="#d3b52d">
          <font>
             <Font name="Arial Bold Italic" size="17.0" />
          </font>
       </Button>
-      <TextField layoutX="334.0" layoutY="159.0" prefHeight="30.0" prefWidth="182.0" style="-fx-border-color: #d3b52d; -fx-background-color: #17152b; -fx-border-width: 3px;" />
-      <TextField layoutX="334.0" layoutY="227.0" prefHeight="30.0" prefWidth="182.0" style="-fx-background-color: #17152b; -fx-border-width: 3px; -fx-border-color: #d3b52d;" />
-      <PasswordField layoutX="334.0" layoutY="291.0" prefHeight="30.0" prefWidth="182.0" style="-fx-border-color: #d3b52d; -fx-border-width: 3px; -fx-background-color: #17152b;" />
-      <PasswordField layoutX="334.0" layoutY="365.0" prefHeight="30.0" prefWidth="182.0" style="-fx-background-color: #17152b; -fx-border-color: #d3b52d; -fx-border-width: 3px;" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="461.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="127.0" fitWidth="189.0" layoutX="472.0" layoutY="5.0">
+      <TextField fx:id="IDidentifiant" layoutX="334.0" layoutY="227.0" prefHeight="30.0" prefWidth="182.0" style="-fx-background-color: #17152b; -fx-border-width: 3px; -fx-border-color: #d3b52d;" />
+      <PasswordField fx:id="IDmotdepasse" layoutX="334.0" layoutY="291.0" prefHeight="30.0" prefWidth="182.0" style="-fx-border-color: #d3b52d; -fx-border-width: 3px; -fx-background-color: #17152b;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="444.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="160.0" fitWidth="200.0" layoutX="467.0">
          <image>
             <Image url="@../image/WhatsApp%20Image%202022-03-21%20at%2002.54.58%20(1).jpeg" />
          </image>
